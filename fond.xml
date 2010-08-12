@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns:xi="http://www.w3.org/2001/XInclude">
+
     <FontSet name="bold-fonts">
         <Font face_name="DejaVu Sans Bold"></Font>
     </FontSet>
@@ -5287,3 +5290,4 @@
       <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
     </Datasource>
 </Layer>
+</Include>
