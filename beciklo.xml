@@ -99,7 +99,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[access] = 'permissive' and ([highway]='unclassified' or [access]='destination' and ([highway]='unclassified' or [highway]='residential' or [highway]='service')</Filter>
+      <Filter>[access] = 'permissive' and [highway]='unclassified' or [access]='destination' and ([highway]='unclassified' or [highway]='residential' or [highway]='service')</Filter>
       <MaxScaleDenominator>20000</MaxScaleDenominator>
       <LineSymbolizer>
         <CssParameter name="stroke">#c2e0ff</CssParameter>
