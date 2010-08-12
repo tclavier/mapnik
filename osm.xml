@@ -6,8 +6,11 @@
     <!ENTITY DarkPlum "rgb(92,53,102)">
     <!ENTITY Plum "rgb(117,80,123)">
     <!ENTITY LightPlum "rgb(173,127,168)">
+    <!ENTITY DarkSkyBlue "rgb(32,74,135)">
+    <!ENTITY SkyBlue "rgb(52,101,164)">
+    <!ENTITY LightSkyBlue "rgb(114,159,207)">
 ]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="rgb(181,208,208)">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&LightSkyBlue;">
     <FontSet name="bold-fonts">
         <Font face_name="DejaVu Sans Bold"></Font>
     </FontSet>
@@ -6064,7 +6067,7 @@
         <Rule>
             <Filter>(((([natural]='water') or ([natural]='lake')) or ([landuse]='reservoir')) or ([landuse]='basin'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([leisure]&lt;&gt;'') or ([landuse]&lt;&gt;'')) and ([point]='yes'))</Filter>
@@ -6074,22 +6077,22 @@
         <Rule>
             <Filter>([natural]='bay')</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='spring')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" dy="10" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&LightSkyBlue;" dy="10" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([tourism]='alpine_hut') or ([amenity]='shelter'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" dy="15" vertical_alignment="bottom" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" dy="15" vertical_alignment="bottom" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([tourism]='alpine_hut') or ([amenity]='shelter'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <TextSymbolizer name="ele" fontset_name="oblique-fonts" size="8" fill="rgb(102,153,204)" dy="25" vertical_alignment="bottom" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="ele" fontset_name="oblique-fonts" size="8" fill="&LightSkyBlue;" dy="25" vertical_alignment="bottom" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bank')</Filter>
@@ -7307,21 +7310,21 @@
             <Filter>((([waterway]='dock') or ([waterway]='mill_pond')) or ([waterway]='canal'))</Filter>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&LightSkyBlue;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='basin')</Filter>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&LightSkyBlue;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>((((([natural]='lake') or ([natural]='water')) or ([landuse]='reservoir')) or ([waterway]='riverbank')) or ([landuse]='water'))</Filter>
             <MaxScaleDenominator>12500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&LightSkyBlue;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -7359,7 +7362,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7370,7 +7373,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7381,7 +7384,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7392,7 +7395,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7403,7 +7406,7 @@
             <MinScaleDenominator>2500</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7414,7 +7417,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>2500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">12</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7425,7 +7428,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7436,19 +7439,19 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <ElseFilter/>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -7456,7 +7459,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7464,14 +7467,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7479,14 +7482,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>2500</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7494,13 +7497,13 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MaxScaleDenominator>2500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7508,14 +7511,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&LightSkyBlue;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7523,26 +7526,26 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and not ((([tunnel]='yes') or ([disused]='yes'))))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7550,31 +7553,31 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and not (((([tunnel]='yes') or ([disused]='yes')) or ([lock]='yes'))))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([waterway]='canal') and not ((([tunnel]='yes') or ([disused]='yes')))) and ([lock]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='derelict_canal') or (([waterway]='canal') and ([disused]='yes')))</Filter>
@@ -7622,7 +7625,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">2.4</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7636,17 +7639,17 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&LightSkyBlue;" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([waterway]='drain') or ([waterway]='ditch')) and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7659,16 +7662,16 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&LightSkyBlue;" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
         </Rule>
         <Rule>
             <ElseFilter/>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -7682,12 +7685,12 @@
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <MinScaleDenominator>1000</MinScaleDenominator>
@@ -7697,12 +7700,12 @@
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&LightSkyBlue;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&LightSkyBlue;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
     </Style>
     <Style name="way_numbers">
