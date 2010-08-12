@@ -9,6 +9,9 @@
     <!ENTITY DarkSkyBlue "rgb(32,74,135)">
     <!ENTITY SkyBlue "rgb(52,101,164)">
     <!ENTITY LightSkyBlue "rgb(114,159,207)">
+    <!ENTITY DarkChameleon "rgb(78,154,6)">
+    <!ENTITY Chameleon "rgb(115,210,22)">
+    <!ENTITY LightChameleon "rgb(138,226,52)">
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&LightSkyBlue;">
     <FontSet name="bold-fonts">
@@ -1035,7 +1038,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>3000000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(141,197,108)</CssParameter>
+                <CssParameter name="fill">&DarkChameleon;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
