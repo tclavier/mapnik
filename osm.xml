@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[
+    <!ENTITY DarkScarletRed "rgb(164,0,0)">
     <!ENTITY ScarletRed "rgb(204,0,0)">
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="rgb(181,208,208)">
@@ -1237,7 +1238,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1278,7 +1279,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1319,7 +1320,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1360,7 +1361,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1711,7 +1712,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1721,7 +1722,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">4.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1731,7 +1732,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1741,7 +1742,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1935,7 +1936,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -1949,7 +1950,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -2005,7 +2006,7 @@
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -2019,7 +2020,7 @@
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -2103,7 +2104,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -2117,7 +2118,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
@@ -2187,7 +2188,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -2196,7 +2197,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2207,7 +2208,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">8.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2218,7 +2219,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2229,7 +2230,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2240,7 +2241,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2251,7 +2252,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2262,7 +2263,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3193,7 +3194,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -3202,7 +3203,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3213,7 +3214,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3224,7 +3225,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3235,7 +3236,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3246,7 +3247,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3257,7 +3258,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3268,7 +3269,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3439,7 +3440,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3450,7 +3451,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3461,7 +3462,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3500,7 +3501,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3511,7 +3512,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3522,7 +3523,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3561,7 +3562,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3572,7 +3573,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3583,7 +3584,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3622,7 +3623,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3633,7 +3634,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3644,7 +3645,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3683,7 +3684,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3694,7 +3695,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3705,7 +3706,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3744,7 +3745,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3755,7 +3756,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3766,7 +3767,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4571,7 +4572,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -4751,7 +4752,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4762,7 +4763,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4773,7 +4774,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4784,7 +4785,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4795,7 +4796,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -5027,7 +5028,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>25000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5036,7 +5037,7 @@
             <MinScaleDenominator>1500000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -5044,7 +5045,7 @@
             <MinScaleDenominator>750000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">1.4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5053,7 +5054,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5062,7 +5063,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5071,7 +5072,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>25000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">0.4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5080,7 +5081,7 @@
             <MinScaleDenominator>1500000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -5088,7 +5089,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5097,7 +5098,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&ScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -6650,7 +6651,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6660,7 +6661,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6670,7 +6671,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6680,7 +6681,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">&ScarletRed;</CssParameter>
+                <CssParameter name="stroke">&DarkScarletRed;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
