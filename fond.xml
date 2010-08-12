@@ -1,15 +1,24 @@
-<Style name="world">
+    <FontSet name="bold-fonts">
+        <Font face_name="DejaVu Sans Bold"></Font>
+    </FontSet>
+    <FontSet name="book-fonts">
+        <Font face_name="DejaVu Sans Book"></Font>
+    </FontSet>
+    <FontSet name="oblique-fonts">
+        <Font face_name="DejaVu Sans Oblique"></Font>
+    </FontSet>
+   <Style name="world">
+       <Rule>
+           <MinScaleDenominator>750000</MinScaleDenominator>
+           <MaxScaleDenominator>250000000000</MaxScaleDenominator>
+           <PolygonSymbolizer>
+               <CssParameter name="fill">rgb(242,239,233)</CssParameter>
+           </PolygonSymbolizer>
+       </Rule>
+    </Style>
+	<Style name="coast-poly">
     <Rule>
-      <MaxScaleDenominator>250000000000</MaxScaleDenominator>
-      <MinScaleDenominator>600000</MinScaleDenominator>
-      <PolygonSymbolizer>
-        <CssParameter name="fill">#f2efe9</CssParameter>
-      </PolygonSymbolizer>
-    </Rule>
-</Style>
-<Style name="coast-poly">
-    <Rule>
-      <MaxScaleDenominator>600000</MaxScaleDenominator>
+      <MaxScaleDenominator>750000</MaxScaleDenominator>
       <PolygonSymbolizer>
         <CssParameter name="fill">#f2efe9</CssParameter>
       </PolygonSymbolizer>
