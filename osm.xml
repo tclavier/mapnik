@@ -904,7 +904,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(170,203,175)</CssParameter>
+                <CssParameter name="fill">&DarkChameleon;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -996,7 +996,7 @@
             <Filter>(([leisure]='park') or ([leisure]='recreation_ground'))</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(182,253,182)</CssParameter>
+                <CssParameter name="fill">&LightChameleon;</CssParameter>
                 <CssParameter name="fill-opacity">0.6</CssParameter>
             </PolygonSymbolizer>
         </Rule>
@@ -1057,7 +1057,7 @@
             <Filter>(([landuse]='farm') or ([landuse]='farmland'))</Filter>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(234,216,189)</CssParameter>
+                <CssParameter name="fill">&Chameleon;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
