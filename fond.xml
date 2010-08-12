@@ -20,8 +20,8 @@
     <Rule>
       <MaxScaleDenominator>750000</MaxScaleDenominator>
       <PolygonSymbolizer>
-        <CssParameter name="fill">#f2efe9</CssParameter>
-      </PolygonSymbolizer>
+				<CssParameter name="fill">rgb(242,239,233)</CssParameter>
+		</PolygonSymbolizer>
     </Rule>
 </Style>
   <!-- BUILTUP VMAP0 -->
