@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="15.999998"
+   id="svg4567"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="police.svg"
+   sodipodi:version="0.32"
+   width="14.561024"
+   version="1.1">
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>AIGA_Symbol_Signs</dc:title>
+        <dc:description>EPS converted from  http://aiga.org</dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>mapsym</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jean-Victor Balin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Jean-Victor Balin</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:language>en</dc:language>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:current-layer="svg4567"
+     inkscape:cx="-13.339937"
+     inkscape:cy="3.2371597"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="543"
+     inkscape:window-width="665"
+     inkscape:window-x="1021"
+     inkscape:window-y="137"
+     inkscape:zoom="3.4732669"
+     pagecolor="#ffffff"
+     showgrid="false"
+     inkscape:window-maximized="0" />
+  <defs
+     id="defs4569">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 187.207 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="341.651 : 187.207 : 1"
+       inkscape:persp3d-origin="170.8255 : 124.80467 : 1"
+       id="perspective21" />
+    <marker
+       id="ArrowEnd"
+       markerHeight="3"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       orient="auto"
+       refX="0"
+       refY="5"
+       viewBox="0 0 10 10">
+      <path
+         d="M 0,0 10,5 0,10 z"
+         id="path4572" />
+    </marker>
+    <marker
+       id="ArrowStart"
+       markerHeight="3"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       orient="auto"
+       refX="10"
+       refY="5"
+       viewBox="0 0 10 10">
+      <path
+         d="M 10,0 0,5 10,10 z"
+         id="path4575" />
+    </marker>
+  </defs>
+  <g
+     id="g4585"
+     transform="matrix(0.04273344,0,0,0.04273344,-0.03889921,0)">
+    <path
+       style="fill:#000000;stroke:none"
+       id="path4587"
+       d="m 164.861,184.892 0,105.192 115.066,-152.591 -116.561,0 c -15.174,-0.122 -24.976,6.502 -34,17.649 L 91.907,205.229 38.616,162.892 c -24.759,-18.301 -52.51,17.135 -28.5,35.75 l 69.87,55.226 c 14.932,10.729 26.932,5.979 33.38,-0.476 l 51.495,-68.5 z" />
+    <g
+       id="g4589">
+      <path
+         style="fill:#000000;stroke:none"
+         id="path4591"
+         d="m 158.701,0 126.007,0 0,35.288 L 183,35.288 158.701,0 z" />
+      <path
+         style="fill:#000000;stroke:none"
+         id="path4593"
+         d="m 285.158,46.424 -101.163,0 -20.391,25.574 23.91,0 c 0,28.468 22.319,48.395 48.357,48.395 25.11,0 49.287,-19.927 49.287,-49.344 l 0,-24.625 z" />
+    </g>
+    <path
+       style="fill:#000000;stroke:none"
+       id="path4595"
+       d="m 308.866,137.892 c 13.359,0 32.785,6.849 32.785,36.209 l 0,200.313 -176.566,0 0,-54.066 128.528,0 0,-25.128 -101.912,0 117.165,-157.328 z" />
+  </g>
+</svg>

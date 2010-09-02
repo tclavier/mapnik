@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="rgb(181,208,208)">
+<!DOCTYPE Map[
+		<!ENTITY user "osm">		
+		<!ENTITY password "osm">		
+		<!ENTITY dbname "gis">		
+
+    <!ENTITY DarkScarletRed "rgb(164,0,0)">
+    <!ENTITY ScarletRed "rgb(204,0,0)">
+    <!ENTITY LightScarletRed "rgb(239,41,41)"> 
+
+    <!ENTITY DarkPlum "rgb(92,53,102)"> 
+    <!ENTITY Plum "rgb(117,80,123)"> 
+    <!ENTITY LightPlum "rgb(173,127,168)">
+
+    <!ENTITY DarkOrange "rgb(252,175,62)"> 
+    <!ENTITY Orange "rgb(245,121,0)"> 
+    <!ENTITY LightOrange "rgb(206,92,0)">
+
+    <!ENTITY DarkSkyBlue "rgb(32,74,135)">
+    <!ENTITY SkyBlue "rgb(52,101,164)">
+    <!ENTITY LightSkyBlue "rgb(114,159,207)">
+
+    <!ENTITY DarkChameleon "rgb(78,154,6)">
+    <!ENTITY Chameleon "rgb(115,210,22)">
+    <!ENTITY LightChameleon "rgb(138,226,52)">
+
+    <!ENTITY DarkButter "rgb(196,160,0)">
+    <!ENTITY Butter "rgb(237,212,0)">
+    <!ENTITY LightButter "rgb(252,233,79)">
+
+    <!ENTITY LightChocolate "rgb(233,185,110)">
+    <!ENTITY Chocolate "rgb(193,125,17)">
+    <!ENTITY DarkChocolate "rgb(143,89,2)">
+
+    <!ENTITY Aluminium6 "rgb(46,52,54)">
+    <!ENTITY Aluminium5 "rgb(85,87,83)">
+    <!ENTITY Aluminium4 "rgb(136,138,133)">
+    <!ENTITY Aluminium3 "rgb(186,189,182)">
+    <!ENTITY Aluminium2 "rgb(211,215,207)">
+    <!ENTITY Aluminium1 "rgb(238,238,236)">
+
+
+		<!ENTITY MotorwayStroke "&DarkOrange;">		
+		<!ENTITY MotorwayFill "&Orange;">		
+
+		<!ENTITY TrunkStroke "&DarkOrange;">		
+		<!ENTITY TrunkFill "&Orange;">		
+
+		<!ENTITY PrimaryStroke "&DarkButter;">		
+		<!ENTITY PrimaryFill "&Butter;">		
+
+		<!ENTITY SecondaryStroke "&DarkButter;">		
+		<!ENTITY SecondaryFill "&LightButter;">		
+
+		<!ENTITY TertiaryStroke "&Butter;">		
+		<!ENTITY TertiaryFill "&LightButter;">		
+
+		<!ENTITY ResidentialStroke "&Aluminium3;">		
+
+		<!ENTITY FootwayStroke "&Chocolate;">		
+		<!ENTITY PathStroke "&Chocolate;">		
+		<!ENTITY CyclewayStroke "&Chocolate;">		
+
+		<!ENTITY WaterStroke "&SkyBlue;">		
+		<!ENTITY WaterFill "&LightSkyBlue;">		
+
+		<!ENTITY AdminStroke "&Plum;">		
+		<!ENTITY DefaultBuilding "&Aluminium1;">		
+
+		<!ENTITY Private "&ScarletRed;">		
+]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&WaterFill;">
     <FontSet name="bold-fonts">
         <Font face_name="DejaVu Sans Bold"></Font>
     </FontSet>
@@ -50,7 +120,7 @@
             <Filter>(([access]='private') or ([access]='no'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(239,169,169)</CssParameter>
+                <CssParameter name="stroke">&Private;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-opacity">0.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
@@ -65,7 +135,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>50000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">0.6</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
             </LineSymbolizer>
@@ -75,7 +145,7 @@
             <MinScaleDenominator>750000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
             </LineSymbolizer>
@@ -84,7 +154,7 @@
             <Filter>([admin_level]='2')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-opacity">0.1</CssParameter>
             </LineSymbolizer>
@@ -93,7 +163,7 @@
             <Filter>([admin_level]='3')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-opacity">0.1</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
@@ -104,7 +174,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>50000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">0.6</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 3</CssParameter>
@@ -115,7 +185,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 3</CssParameter>
             </LineSymbolizer>
@@ -124,7 +194,7 @@
             <Filter>([admin_level]='4')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 3</CssParameter>
@@ -136,7 +206,7 @@
             <Filter>([admin_level]='5')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-opacity">0.3</CssParameter>
                 <CssParameter name="stroke-dasharray">6, 3, 2, 3, 2, 3</CssParameter>
@@ -146,7 +216,7 @@
             <Filter>([admin_level]='6')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-opacity">0.3</CssParameter>
                 <CssParameter name="stroke-dasharray">6, 3, 2, 3</CssParameter>
@@ -156,7 +226,7 @@
             <Filter>(([admin_level]='8') or ([admin_level]='7'))</Filter>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-opacity">0.3</CssParameter>
                 <CssParameter name="stroke-dasharray">5, 2</CssParameter>
@@ -168,7 +238,7 @@
             <Filter>(([admin_level]='10') or ([admin_level]='9'))</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-opacity">0.3</CssParameter>
                 <CssParameter name="stroke-dasharray">2, 3</CssParameter>
@@ -179,7 +249,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,0,128)</CssParameter>
+                <CssParameter name="stroke">&AdminStroke;</CssParameter>
                 <CssParameter name="stroke-opacity">0.2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -328,7 +398,7 @@
             <Filter>(((([building]&lt;&gt;'station') and ([building]&lt;&gt;'supermarket')) and ([building]&lt;&gt;'')) and (not (([amenity]&lt;&gt;'')) or ([amenity]&lt;&gt;'place_of_worship')))</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(188,169,169)</CssParameter>
+                <CssParameter name="fill">&DefaultBuilding;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -604,7 +674,7 @@
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(250,128,114)</CssParameter>
+                <CssParameter name="stroke">&FootwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-opacity">0.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
@@ -648,7 +718,7 @@
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(0,0,255)</CssParameter>
+                <CssParameter name="stroke">&CyclewayStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-opacity">0.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
@@ -1234,7 +1304,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1244,7 +1314,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1254,7 +1324,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1264,7 +1334,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1275,7 +1345,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1285,7 +1355,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1295,7 +1365,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1305,7 +1375,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">8.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1316,7 +1386,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1326,7 +1396,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1336,7 +1406,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1346,7 +1416,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1357,7 +1427,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1367,7 +1437,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1377,7 +1447,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1387,7 +1457,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1398,7 +1468,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1420,7 +1490,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1442,7 +1512,7 @@
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&ResidentialStroke;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1453,7 +1523,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&ResidentialStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1464,7 +1534,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1475,7 +1545,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&ResidentialStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1708,7 +1778,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1718,7 +1788,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">4.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1728,7 +1798,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1738,7 +1808,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1748,7 +1818,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1758,7 +1828,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1768,7 +1838,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1778,7 +1848,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1788,7 +1858,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1798,7 +1868,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1808,7 +1878,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1818,7 +1888,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
@@ -1828,7 +1898,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1839,7 +1909,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">8.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1850,7 +1920,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1861,7 +1931,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1872,7 +1942,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1883,7 +1953,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1894,7 +1964,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -1905,7 +1975,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&TertiaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">16</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2184,7 +2254,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -2193,7 +2263,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2204,7 +2274,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">8.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2215,7 +2285,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2226,7 +2296,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2237,7 +2307,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2248,7 +2318,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2259,7 +2329,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2270,7 +2340,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2281,7 +2351,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2292,7 +2362,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2303,7 +2373,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2314,7 +2384,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2325,7 +2395,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2336,7 +2406,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2347,7 +2417,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2641,7 +2711,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(187,187,187)</CssParameter>
+                <CssParameter name="stroke">&ResidentialStroke;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -2814,7 +2884,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">4.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2825,7 +2895,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2836,7 +2906,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.4</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2847,7 +2917,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -2949,7 +3019,7 @@
             <Filter>([highway]='steps')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(250,128,114)</CssParameter>
+                <CssParameter name="stroke">&FootwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-dasharray">2, 1</CssParameter>
             </LineSymbolizer>
@@ -2981,7 +3051,7 @@
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(250,128,114)</CssParameter>
+                <CssParameter name="stroke">&FootwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3024,7 +3094,7 @@
                 <CssParameter name="stroke-opacity">0.4</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(250,128,114)</CssParameter>
+                <CssParameter name="stroke">&FootwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3042,7 +3112,7 @@
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(0,0,255)</CssParameter>
+                <CssParameter name="stroke">&CyclewayStroke;</CssParameter>
                 <CssParameter name="stroke-width">1.2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3190,7 +3260,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -3199,7 +3269,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3210,7 +3280,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3221,7 +3291,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3232,7 +3302,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3243,7 +3313,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3254,7 +3324,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3265,7 +3335,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3276,7 +3346,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3287,7 +3357,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3298,7 +3368,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3309,7 +3379,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3320,7 +3390,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3331,7 +3401,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3342,7 +3412,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3353,7 +3423,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">15.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3364,7 +3434,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">4.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3375,7 +3445,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3386,7 +3456,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.4</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3397,7 +3467,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3436,7 +3506,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3447,7 +3517,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3458,7 +3528,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3497,7 +3567,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3508,7 +3578,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3519,7 +3589,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3558,7 +3628,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3569,7 +3639,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3580,7 +3650,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3619,7 +3689,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3630,7 +3700,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3641,7 +3711,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3680,7 +3750,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3691,7 +3761,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3702,7 +3772,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3741,7 +3811,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">5.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3752,7 +3822,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">7.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3763,7 +3833,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -3934,7 +4004,7 @@
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(250,128,114)</CssParameter>
+                <CssParameter name="stroke">&FootwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4104,12 +4174,12 @@
         <Rule>
             <Filter>(([amenity]='bus_stop') or ([highway]='bus_stop'))</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop.p.12.png" type="png" width="12" height="12"></PointSymbolizer>
+            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop.png" type="png" width="12" height="12"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bus_station')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_station.n.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='traffic_signals')</Filter>
@@ -4324,7 +4394,7 @@
         <Rule>
             <Filter>([shop]='supermarket')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_supermarket.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_supermarket.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='bakery')</Filter>
@@ -4416,7 +4486,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4427,7 +4497,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4438,7 +4508,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4477,7 +4547,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4488,7 +4558,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4499,7 +4569,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4538,7 +4608,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4549,7 +4619,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4560,7 +4630,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4573,7 +4643,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -4582,7 +4652,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -4615,7 +4685,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -4753,7 +4823,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4764,7 +4834,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4775,7 +4845,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4786,7 +4856,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4797,7 +4867,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4808,7 +4878,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4819,7 +4889,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4830,7 +4900,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">10.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4841,7 +4911,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,215,165)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4852,7 +4922,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4863,7 +4933,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -4874,7 +4944,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(255,255,179)</CssParameter>
+                <CssParameter name="stroke">&TertiaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -5029,7 +5099,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>25000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5038,7 +5108,7 @@
             <MinScaleDenominator>1500000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -5046,7 +5116,7 @@
             <MinScaleDenominator>750000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">1.4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5055,7 +5125,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5064,7 +5134,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(128,155,192)</CssParameter>
+                <CssParameter name="stroke">&MotorwayFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5073,7 +5143,7 @@
             <MinScaleDenominator>6500000</MinScaleDenominator>
             <MaxScaleDenominator>25000000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(169,219,169)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">0.4</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5082,7 +5152,7 @@
             <MinScaleDenominator>1500000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -5090,7 +5160,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5099,7 +5169,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(151,211,151)</CssParameter>
+                <CssParameter name="stroke">&TrunkFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5108,7 +5178,7 @@
             <MinScaleDenominator>1500000</MinScaleDenominator>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5117,7 +5187,7 @@
             <MinScaleDenominator>750000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">1.2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5126,7 +5196,7 @@
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5135,7 +5205,7 @@
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(236,152,154)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -5523,7 +5593,7 @@
             <Filter>([highway]='secondary')</Filter>
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="rgb(254,215,165)"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="&SecondaryFill;"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') or ([highway]='primary'))</Filter>
@@ -5541,13 +5611,13 @@
             <Filter>([highway]='secondary')</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="rgb(254,215,165)"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="&SecondaryFill;"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='secondary')</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="rgb(254,215,165)"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(0,0,0)" placement="line" halo_radius="1" halo_fill="&SecondaryFill;"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='tertiary')</Filter>
@@ -5881,7 +5951,7 @@
             <Filter>([aeroway]='airport')</Filter>
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/airport.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="/home/tom/mapnik/symbols/airport.png" type="png" width="16" height="16"></PointSymbolizer>
             <TextSymbolizer name="name" fontset_name="bold-fonts" size="8" fill="rgb(102,146,218)" dy="-12" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
@@ -5894,7 +5964,7 @@
             <Filter>([aeroway]='aerodrome')</Filter>
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/aerodrome.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="/home/tom/mapnik/symbols/aerodrome.png" type="png" width="16" height="16"></PointSymbolizer>
             <TextSymbolizer name="name" fontset_name="oblique-fonts" size="8" fill="rgb(102,146,218)" dy="-12" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
@@ -6061,7 +6131,7 @@
         <Rule>
             <Filter>(((([natural]='water') or ([natural]='lake')) or ([landuse]='reservoir')) or ([landuse]='basin'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([leisure]&lt;&gt;'') or ([landuse]&lt;&gt;'')) and ([point]='yes'))</Filter>
@@ -6071,12 +6141,12 @@
         <Rule>
             <Filter>([natural]='bay')</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='spring')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" dy="10" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&WaterStroke;" dy="10" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([tourism]='alpine_hut') or ([amenity]='shelter'))</Filter>
@@ -6652,7 +6722,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6662,7 +6732,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6672,7 +6742,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6682,7 +6752,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(80,96,119)</CssParameter>
+                <CssParameter name="stroke">&MotorwayStroke;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6692,7 +6762,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6702,7 +6772,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6712,7 +6782,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6722,7 +6792,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(71,113,71)</CssParameter>
+                <CssParameter name="stroke">&TrunkStroke;</CssParameter>
                 <CssParameter name="stroke-width">14</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6732,7 +6802,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6742,7 +6812,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6752,7 +6822,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6762,7 +6832,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(141,67,70)</CssParameter>
+                <CssParameter name="stroke">&PrimaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">14</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6772,7 +6842,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6782,7 +6852,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6792,7 +6862,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">12</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6802,7 +6872,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(163,123,72)</CssParameter>
+                <CssParameter name="stroke">&SecondaryStroke;</CssParameter>
                 <CssParameter name="stroke-width">17</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -6982,7 +7052,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(244,195,196)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -6993,7 +7063,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(244,195,196)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">6.5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7004,7 +7074,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(244,195,196)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7015,7 +7085,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(244,195,196)</CssParameter>
+                <CssParameter name="stroke">&PrimaryFill;</CssParameter>
                 <CssParameter name="stroke-width">12</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7026,7 +7096,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,224,184)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7037,7 +7107,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,224,184)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">8</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7048,7 +7118,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,224,184)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7059,7 +7129,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(254,224,184)</CssParameter>
+                <CssParameter name="stroke">&SecondaryFill;</CssParameter>
                 <CssParameter name="stroke-width">14</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7309,21 +7379,21 @@
             <Filter>((([waterway]='dock') or ([waterway]='mill_pond')) or ([waterway]='canal'))</Filter>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&WaterFill;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='basin')</Filter>
             <MaxScaleDenominator>6500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&WaterFill;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>((((([natural]='lake') or ([natural]='water')) or ([landuse]='reservoir')) or ([waterway]='riverbank')) or ([landuse]='water'))</Filter>
             <MaxScaleDenominator>12500000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(181,208,208)</CssParameter>
+                <CssParameter name="fill">&WaterFill;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -7361,7 +7431,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7372,7 +7442,7 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7383,7 +7453,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">5</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7394,7 +7464,7 @@
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7405,7 +7475,7 @@
             <MinScaleDenominator>2500</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7416,7 +7486,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>2500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">12</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7427,7 +7497,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
@@ -7438,19 +7508,19 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <ElseFilter/>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
             </LineSymbolizer>
         </Rule>
         <Rule>
@@ -7458,7 +7528,7 @@
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7466,14 +7536,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7481,14 +7551,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">4</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>2500</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7496,13 +7566,13 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='river') and ([tunnel]='yes'))</Filter>
             <MaxScaleDenominator>2500</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">13</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7510,14 +7580,14 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">9</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,153,204)" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&WaterStroke;" placement="line" halo_radius="1" min_distance="200"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7525,26 +7595,26 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">3</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and not ((([tunnel]='yes') or ([disused]='yes'))))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7552,31 +7622,31 @@
                 <CssParameter name="stroke">rgb(255,255,255)</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='canal') and not (((([tunnel]='yes') or ([disused]='yes')) or ([lock]='yes'))))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">11</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([waterway]='canal') and not ((([tunnel]='yes') or ([disused]='yes')))) and ([lock]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">7</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='derelict_canal') or (([waterway]='canal') and ([disused]='yes')))</Filter>
@@ -7624,7 +7694,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">2.4</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7638,17 +7708,17 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&WaterStroke;" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([waterway]='drain') or ([waterway]='ditch')) and ([tunnel]='yes'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
@@ -7661,16 +7731,16 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,153,204)" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&WaterStroke;" placement="line" halo_radius="1" spacing="600"></TextSymbolizer>
         </Rule>
         <Rule>
             <ElseFilter/>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">2</CssParameter>
             </LineSymbolizer>
         </Rule>
@@ -7684,12 +7754,12 @@
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">6</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <MinScaleDenominator>1000</MinScaleDenominator>
@@ -7699,12 +7769,12 @@
                 <CssParameter name="stroke-linejoin">round</CssParameter>
             </LineSymbolizer>
             <LineSymbolizer>
-                <CssParameter name="stroke">rgb(181,208,208)</CssParameter>
+                <CssParameter name="stroke">&WaterFill;</CssParameter>
                 <CssParameter name="stroke-width">10</CssParameter>
                 <CssParameter name="stroke-linejoin">round</CssParameter>
                 <CssParameter name="stroke-linecap">round</CssParameter>
             </LineSymbolizer>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(102,153,204)" placement="line" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&WaterStroke;" placement="line" halo_radius="1"></TextSymbolizer>
         </Rule>
     </Style>
     <Style name="way_numbers">
@@ -7760,11 +7830,11 @@
     <Layer name="leisure" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>leisure</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,aeroway,amenity,landuse,leisure,man_made,military,"natural",power,shop,tourism,name,
@@ -7783,17 +7853,17 @@
       ) as leisure
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="sports_grounds" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>sports_grounds</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,leisure,
@@ -7806,17 +7876,17 @@
       ) as sports_grounds
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="water_areas" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>water_areas</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,"natural",waterway,landuse,name
@@ -7827,17 +7897,17 @@
       order by z_order,way_area desc
       ) as water_areas</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="glaciers-text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>glaciers-text</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name,way_area
@@ -7846,17 +7916,17 @@
       order by way_area desc
       ) as glaciers</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="water_lines" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>water_lines</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,waterway,disused,lock,name,
@@ -7867,127 +7937,127 @@
       order by z_order
       ) as water_lines</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="dam" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>dam</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name from planet_osm_line where waterway='dam') as dam</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="marinas-area" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>marinas-area</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way from planet_osm_polygon where leisure ='marina') as marinas
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="piers-area" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>piers-area</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,man_made from planet_osm_polygon where man_made in ('pier','breakwater','groyne')) as piers
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="piers" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>piers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,man_made from planet_osm_line where man_made in ('pier','breakwater','groyne')) as piers
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="locks" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>locks</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,waterway from planet_osm_point where waterway='lock_gate') as locks
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="tunnels" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>tunnels-casing</StyleName>
         <StyleName>tunnels-fill</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway from planet_osm_line where highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','secondary','secondary_link','tertiary','tertiary_link','residential','unclassified','minor') and tunnel in ('yes','true','1') order by z_order) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="citywalls" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>citywalls</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way from planet_osm_line where "historic"='citywalls') as citywalls</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="turning_circle-casing" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>turning_circle-casing</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select p.way as way,l.highway as int_tc_type
@@ -7998,49 +8068,49 @@
       ) as turning_circle
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="footbikecycle-tunnels" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" clear_label_cache="1">
         <StyleName>footbikecycle-tunnels</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,horse,foot,bicycle from planet_osm_line where highway in ('bridleway','footway','cycleway','path') and tunnel in ('yes','true','1') order by z_order) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="tracks-tunnels" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>tracks-tunnels</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,tracktype from planet_osm_line where highway='track' and tunnel in ('yes','true','1')) as tracks
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="buildings" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>buildings</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,building,leisure,railway,amenity,aeroway from planet_osm_polygon
@@ -8051,50 +8121,50 @@
        order by z_order,way_area desc) as buildings
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="line features" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>cliffs</StyleName>
         <StyleName>barriers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,barrier,"natural",man_made from planet_osm_line where barrier is not null or "natural" in ('hedge','cliff') or man_made='embankment') as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="polygon barriers" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>barriers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
        (select way,barrier,"natural" from planet_osm_polygon where barrier is not null or "natural"='hedge') as barriers
        </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="highway-area-casing" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>highway-area-casing</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,railway from planet_osm_polygon
@@ -8103,18 +8173,18 @@
        order by z_order,way_area desc) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="minor-roads-casing" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>minor-roads-casing-links</StyleName>
         <StyleName>minor-roads-casing</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,service,
@@ -8124,17 +8194,17 @@
        order by z_order) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="turning_circle-fill" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>turning_circle-fill</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select p.way as way,l.highway as int_tc_type
@@ -8145,17 +8215,17 @@
       ) as turning_circle
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="highway-area-fill" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>highway-area-fill</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,railway from planet_osm_polygon
@@ -8164,34 +8234,34 @@
        order by z_order,way_area desc) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="tracks-notunnel-nobridge" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>tracks-notunnel-nobridge</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,tracktype from planet_osm_line where highway='track' and (bridge is null or bridge in ('no','false','0')) and (tunnel is null or tunnel in ('no','false','0'))) as tracks
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="minor-roads-fill" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>minor-roads-fill-links</StyleName>
         <StyleName>minor-roads-fill</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,horse,bicycle,foot,construction,aeroway,service,
@@ -8207,49 +8277,49 @@
        order by z_order) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="ferry-routes" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>ferry-routes</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way from planet_osm_line where route='ferry' ) as routes
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="aerialways" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>aerialways</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,aerialway from planet_osm_line where aerialway is not null) as aerialways
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="roads" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>roads</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,railway,
@@ -8261,21 +8331,21 @@
       ) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="waterway-bridges" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>waterway-bridges</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way,name from planet_osm_line where waterway='canal' and bridge in ('yes','true','1','aqueduct') order by z_order) as water</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="bridges" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
@@ -8301,11 +8371,11 @@
         <StyleName>mwaybridge_layer5_casing</StyleName>
         <StyleName>mwaybridge_layer5_fill</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,aeroway,railway,layer,horse,bicycle,foot,bridge
@@ -8318,81 +8388,81 @@
       ) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="tracks-bridges" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>tracks-bridges</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,tracktype from planet_osm_line where highway='track' and bridge in ('yes','true','1')) as tracks
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="access" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>access</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,access,highway from planet_osm_line where access is not null) as access
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="trams" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>trams</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way from planet_osm_line where railway='tram' and (tunnel is null or tunnel not in ('yes','true','1'))) as trams
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="guideways" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>guideways</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way from planet_osm_line where highway='bus_guideway' and (tunnel is null or tunnel not in ('yes','true','1'))) as guideways
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="admin-01234" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>admin-01234</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,admin_level
@@ -8401,17 +8471,17 @@
          and admin_level in ('0','1','2','3','4')
        ) as admin</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="admin-5678" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>admin-5678</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,admin_level
@@ -8420,17 +8490,17 @@
          and admin_level in ('5','6','7','8')
        ) as admin</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="admin-other" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>admin-other</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,admin_level
@@ -8439,7 +8509,7 @@
          and (admin_level is null or admin_level not in ('0','1','2','3','4','5','6','7','8'))
        ) as admin</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="placenames-large" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
@@ -8447,11 +8517,11 @@
         <StyleName>state</StyleName>
         <StyleName>capital</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,place,name,ref
@@ -8460,18 +8530,18 @@
          or (place in ('city','metropolis') and capital='yes')
       ) as placenames</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="placenames-medium" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>city</StyleName>
         <StyleName>town</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,place,name
@@ -8480,7 +8550,7 @@
         and (capital is null or capital&lt;&gt;'yes')
       ) as placenames</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="placenames-small" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
@@ -8488,11 +8558,11 @@
         <StyleName>village</StyleName>
         <StyleName>hamlet</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,place,name
@@ -8500,17 +8570,17 @@
       where place in ('suburb','village','large_village','hamlet','locality')
       ) as placenames</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-stations" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>stations</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name,railway,aerialway,disused
@@ -8520,17 +8590,17 @@
       ) as stations
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-stations-poly" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>stations</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name,railway,aerialway,disused
@@ -8540,17 +8610,17 @@
       ) as stations
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-symbols" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>symbols</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select *
@@ -8564,17 +8634,17 @@
          or railway='level_crossing'
       ) as symbols</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-symbols-poly" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>symbols</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select *
@@ -8588,17 +8658,17 @@
          or railway='level_crossing'
       ) as symbols</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-points" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>points</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,amenity,shop,tourism,highway,man_made,access,religion,waterway,lock,historic
@@ -8613,17 +8683,17 @@
          or lock='yes'
       ) as points</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="amenity-points-poly" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>points</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,amenity,shop,tourism,highway,man_made,access,religion,waterway,lock,historic
@@ -8636,45 +8706,45 @@
          or historic='memorial'
       ) as points</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="power" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>power</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way from planet_osm_line where "power"='line') as power</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="power_towers" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>power_towers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way from planet_osm_point where power='tower') as power_towers</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="directions" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>directions</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,
@@ -8685,17 +8755,17 @@
       ) as directions
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="planet roads text osm low zoom" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>roads-text-low-zoom</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,ref,char_length(ref) as length
@@ -8705,17 +8775,17 @@
       ) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="highway-junctions" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>highway-junctions</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
      (select way,ref,name
@@ -8724,17 +8794,17 @@
      ) as junctions
      </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="planet roads text osm" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>roads-text</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,highway,aeroway,name,ref,char_length(ref) as length,
@@ -8747,17 +8817,17 @@
       ) as roads
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>text</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,amenity,shop,access,leisure,landuse,man_made,"natural",place,tourism,ele,name,ref,military,aeroway,waterway,historic,'yes'::text as point
@@ -8777,17 +8847,17 @@
       ) as text
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="text-poly" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>text</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,aeroway,shop,access,amenity,leisure,landuse,man_made,"natural",place,tourism,NULL as ele,name,ref,military,waterway,historic,'no'::text as point
@@ -8805,17 +8875,17 @@
       ) as text
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="area-text" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>area-text</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,way_area,name
@@ -8826,83 +8896,83 @@
       ) as text
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="interpolation_lines" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>interpolation</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
        (select way from planet_osm_line where "addr:interpolation" is not null) as interpolation
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="housenumb_ways" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>way_numbers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way,"addr:housenumber" from planet_osm_polygon where "addr:housenumber" is not null and building is not null) as way_numbers</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="housenumb_nodes" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>node_numbers</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">(select way,"addr:housenumber" from planet_osm_point where "addr:housenumber" is not null) as node_numbers</Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="misc_boundaries" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>boundary</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name,boundary from planet_osm_polygon where boundary='national_park') as boundary
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
     <Layer name="theme_park" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>theme_park</StyleName>
         <Datasource>
-            <Parameter name="dbname">gis</Parameter>
+            <Parameter name="dbname">&dbname;</Parameter>
             <Parameter name="estimate_extent">false</Parameter>
             <Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
             <Parameter name="host">localhost</Parameter>
-            <Parameter name="password">osm</Parameter>
+            <Parameter name="password">&password;</Parameter>
             <Parameter name="port">5432</Parameter>
             <Parameter name="table">
       (select way,name,tourism from planet_osm_polygon where tourism='theme_park') as theme_park
       </Parameter>
             <Parameter name="type">postgis</Parameter>
-            <Parameter name="user">osm</Parameter>
+            <Parameter name="user">&user;</Parameter>
         </Datasource>
     </Layer>
 </Map>
