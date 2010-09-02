@@ -71,7 +71,7 @@
      borderopacity="1.0"
      id="base"
      inkscape:current-layer="svg3117"
-     inkscape:cx="4.2908533"
+     inkscape:cx="0.36803338"
      inkscape:cy="7.5466481"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -127,7 +127,10 @@
        sodipodi:type="inkscape:persp3d" />
   </defs>
   <path
-     style="fill:#3465a4;stroke:#204a87;stroke-width:0.99848992;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:none"
+     style="fill:#729fcf;stroke:#3465a4;stroke-width:0.99848992000000003;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-end:none"
      id="path3131"
-     d="m 7.093635,1.3258005 c 9.7e-4,-1.10720995 1.7183,-1.10722995 1.71717,0.0312 l 0,4.64671 6.68996,3.9099 0,1.7167205 -6.65783,-2.1307705 0,3.4729405 1.54076,1.17052 0,1.35777 -2.3753,-0.71791 -2.37528,0.71791 0,-1.35777 1.52471,-1.17052 0,-3.4729405 -6.65858004,2.1307705 0,-1.7167205 6.59439004,-3.9099 0,-4.67791 z" />
+     d="m 7.093635,1.3258005 c 9.7e-4,-1.10720995 1.7183,-1.10722995 1.71717,0.0312 l 0,4.64671 6.68996,3.9099 0,1.7167205 -6.65783,-2.1307705 0,3.4729405 1.54076,1.17052 0,1.35777 -2.3753,-0.71791 -2.37528,0.71791 0,-1.35777 1.52471,-1.17052 0,-3.4729405 -6.65858004,2.1307705 0,-1.7167205 6.59439004,-3.9099 0,-4.67791 z"
+     inkscape:export-filename="/home/tom/tmp/mapnik/tango/aerodrome.png"
+     inkscape:export-xdpi="90"
+     inkscape:export-ydpi="90" />
 </svg>

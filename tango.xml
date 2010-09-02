@@ -3,6 +3,7 @@
 		<!ENTITY user "osm">		
 		<!ENTITY password "osm">		
 		<!ENTITY dbname "gis">		
+		<!ENTITY IconsDir "/etc/mapnik/tango">		
 
     <!ENTITY DarkScarletRed "rgb(164,0,0)">
     <!ENTITY ScarletRed "rgb(204,0,0)">
@@ -68,6 +69,10 @@
 		<!ENTITY DefaultBuilding "&Aluminium1;">		
 
 		<!ENTITY Private "&ScarletRed;">		
+
+		<!ENTITY Park "&LightChameleon;">		
+		<!ENTITY Cemetery "&LightChameleon;">		
+		<!ENTITY Forest "&LightChameleon;">		
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&WaterFill;">
     <FontSet name="bold-fonts">
@@ -259,13 +264,13 @@
             <Filter>(([aerialway]='cable_car') or ([aerialway]='gondola'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <LinePatternSymbolizer file="/home/tom/mapnik/symbols/cable_car.png" type="png" width="28" height="3"></LinePatternSymbolizer>
+            <LinePatternSymbolizer file="&IconsDir;/cable_car.png" type="png" width="28" height="3"></LinePatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([aerialway]='chair_lift') or ([aerialway]='drag_lift'))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <LinePatternSymbolizer file="/home/tom/mapnik/symbols/chair_lift.png" type="png" width="30" height="5"></LinePatternSymbolizer>
+            <LinePatternSymbolizer file="&IconsDir;/chair_lift.png" type="png" width="30" height="5"></LinePatternSymbolizer>
         </Rule>
     </Style>
     <Style name="area-text">
@@ -509,17 +514,17 @@
             <Filter>([natural]='cliff')</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <LinePatternSymbolizer file="/home/tom/mapnik/symbols/cliff.png" type="png" width="15" height="4"></LinePatternSymbolizer>
+            <LinePatternSymbolizer file="&IconsDir;/cliff.png" type="png" width="15" height="4"></LinePatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='cliff')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <LinePatternSymbolizer file="/home/tom/mapnik/symbols/cliff2.png" type="png" width="15" height="6"></LinePatternSymbolizer>
+            <LinePatternSymbolizer file="&IconsDir;/cliff2.png" type="png" width="15" height="6"></LinePatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='embankment')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <LinePatternSymbolizer file="/home/tom/mapnik/symbols/cliff.png" type="png" width="15" height="4"></LinePatternSymbolizer>
+            <LinePatternSymbolizer file="&IconsDir;/cliff.png" type="png" width="15" height="4"></LinePatternSymbolizer>
         </Rule>
     </Style>
     <Style name="coast-poly">
@@ -920,7 +925,7 @@
         <Rule>
             <Filter>([landuse]='quarry')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/quarry2.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/quarry2.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
             <LineSymbolizer>
                 <CssParameter name="stroke">rgb(128,128,128)</CssParameter>
                 <CssParameter name="stroke-width">0.5</CssParameter>
@@ -937,30 +942,30 @@
         <Rule>
             <Filter>([landuse]='orchard')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/orchard.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/orchard.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='vineyard')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/vineyard.png" type="png" width="29" height="29"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/vineyard.png" type="png" width="29" height="29"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([leisure]='nature_reserve')</Filter>
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/nature_reserve.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/nature_reserve.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([leisure]='nature_reserve')</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/nature_reserve2.png" type="png" width="42" height="48"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/nature_reserve2.png" type="png" width="42" height="48"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard'))</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(170,203,175)</CssParameter>
+                <CssParameter name="fill">&Cemetery;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -1024,22 +1029,22 @@
             <Filter>([military]='danger_area')</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/danger.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/danger.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard')) and ([religion]='jewish'))</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/cemetery_jewish.18.png" type="png" width="18" height="18"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/cemetery_jewish.18.png" type="png" width="18" height="18"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard')) and ([religion]='christian'))</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/grave_yard.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/grave_yard.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard')) and ([religion]='INT-generic'))</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/grave_yard_generic.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/grave_yard_generic.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([landuse]='meadow') or ([landuse]='grass'))</Filter>
@@ -1052,14 +1057,14 @@
             <Filter>(([leisure]='park') or ([leisure]='recreation_ground'))</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(182,253,182)</CssParameter>
+                <CssParameter name="fill">&Park;</CssParameter>
                 <CssParameter name="fill-opacity">0.6</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='zoo')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/zoo.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/zoo.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([leisure]='common')</Filter>
@@ -1094,13 +1099,13 @@
             <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>3000000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(141,197,108)</CssParameter>
+                <CssParameter name="fill">&Forest;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='forest')</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/forest.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/forest.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='farmyard')</Filter>
@@ -1262,12 +1267,12 @@
         <Rule>
             <Filter>([natural]='beach')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/beach.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/beach.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='mud')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/mud.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/mud.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
         </Rule>
     </Style>
     <Style name="locks">
@@ -1275,7 +1280,7 @@
             <Filter>([waterway]='lock_gate')</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/lock_gate.png" type="png" width="9" height="9"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/lock_gate.png" type="png" width="9" height="9"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="marinas-area">
@@ -4138,298 +4143,298 @@
         <Rule>
             <Filter>([tourism]='alpine_hut')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/alpinehut.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/alpinehut.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='shelter')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shelter2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shelter2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='atm')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/atm2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/atm2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bank')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bank2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bank2.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bar')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bar.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bar.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bicycle_rental')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/rental_bicycle.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/rental_bicycle.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='bus_stop') or ([highway]='bus_stop'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop_small.png" type="png" width="6" height="6"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bus_stop_small.png" type="png" width="6" height="6"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='bus_stop') or ([highway]='bus_stop'))</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop.png" type="png" width="12" height="12"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bus_stop.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='bus_station')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bus_stop.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bus_stop.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='traffic_signals')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/traffic_light.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/traffic_light.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='cafe')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/cafe.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/cafe.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='camp_site')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/camping.n.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/camping.n.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='ford')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/transport_ford.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/transport_ford.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='caravan_site')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/caravan_park.p.24.png" type="png" width="24" height="24"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/caravan_park.p.24.png" type="png" width="24" height="24"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='car_sharing')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/car_share.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/car_share.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='cinema')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/cinema.p.24.png" type="png" width="24" height="24"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/cinema.p.24.png" type="png" width="24" height="24"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='fire_station')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/firestation.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/firestation.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='fuel')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/fuel.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/fuel.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='guest_house')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/guest_house.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/guest_house.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='hospital')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/hospital.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/hospital.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='hostel')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/hostel.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/hostel.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='hotel')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/hotel2.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/hotel2.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='embassy')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/embassy.png" type="png" width="12" height="12"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/embassy.png" type="png" width="12" height="12"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='library')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/library.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/library.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([waterway]='lock') or ([lock]='yes'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/lock_gate.png" type="png" width="9" height="9"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/lock_gate.png" type="png" width="9" height="9"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='mast')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/communications.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/communications.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='museum')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/museum.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/museum.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='parking') and (([access]='public') or not (([access]&lt;&gt;''))))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/parking.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/parking.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='parking') and (([access]&lt;&gt;'') and not (([access]='public'))))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/parking_private.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/parking_private.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='pharmacy')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/pharmacy.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/pharmacy.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='place_of_worship') and ([religion]='christian'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/christian3.p.14.png" type="png" width="14" height="14"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/christian3.p.14.png" type="png" width="14" height="14"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='place_of_worship') and ([religion]='muslim'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/islamic3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/islamic3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='place_of_worship') and ([religion]='sikh'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/sikh3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/sikh3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([amenity]='place_of_worship') and ([religion]='jewish'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/jewish3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/jewish3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='place_of_worship')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/place_of_worship3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/place_of_worship3.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='police')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/police.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/police.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='post_box')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/post_box.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/post_box.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='post_office')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/post_office.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/post_office.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='pub')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/pub.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/pub.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='recycling')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/recycling.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/recycling.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='restaurant')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/restaurant.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/restaurant.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='fast_food')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/fast_food.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/fast_food.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='telephone')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/telephone.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/telephone.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='emergency_phone')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/sosphone.png" type="png" width="16" height="14"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/sosphone.png" type="png" width="16" height="14"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='theatre')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/theatre.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/theatre.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='toilets')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/toilets.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/toilets.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='drinking_water')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/food_drinkingtap.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/food_drinkingtap.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='prison')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/amenity_prison.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/amenity_prison.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='viewpoint')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/view_point.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/view_point.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='water_tower')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/tower_water.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/tower_water.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([historic]='memorial')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/tourist_memorial.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/tourist_memorial.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='supermarket')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_supermarket.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_supermarket.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='bakery')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_bakery.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_bakery.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='butcher')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_butcher.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_butcher.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([shop]='clothes') or ([shop]='fashion'))</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_clothes.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_clothes.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='convenience')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_convenience.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_convenience.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='department_store')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/department_store.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/department_store.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='doityourself')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_diy.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_diy.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='hairdresser')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/shop_hairdresser.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/shop_hairdresser.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="power">
@@ -4451,7 +4456,7 @@
     <Style name="power_towers">
         <Rule>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/power_tower.png" type="png" width="7" height="7"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/power_tower.png" type="png" width="7" height="7"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="primarybridge_layer0_casing">
@@ -5337,241 +5342,241 @@
             <Filter>(([highway]='motorway') and ([length]=1))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=2))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=3))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=4))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=5))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=6))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=7))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=8))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=1))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=2))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=3))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="24" file="/home/tom/mapnik/symbols/tru_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="24" file="&IconsDir;/tru_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=4))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=5))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=6))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=7))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=8))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=1))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=2))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=3))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=4))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=5))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=6))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=7))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=8))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=1)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=2)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=3)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=4)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=5)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=6)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=7)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='secondary') and ([length]=8)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/sec_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/sec_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=1)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=2)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=3)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=4)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=5)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=6)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=7)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='tertiary') and ([length]=8)) and not (([bridge]='yes')))</Filter>
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="/home/tom/mapnik/symbols/ter_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="40" file="&IconsDir;/ter_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([highway]='unclassified') or ([highway]='residential')) and not (([bridge]='yes')))</Filter>
@@ -5679,145 +5684,145 @@
             <Filter>(([highway]='motorway') and ([length]=1))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=2))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=3))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=4))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=5))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=6))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=7))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='motorway') and ([length]=8))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/mot_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/mot_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=1))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=2))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=3))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="24" file="/home/tom/mapnik/symbols/tru_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="24" file="&IconsDir;/tru_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=4))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=5))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=6))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=7))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='trunk') and ([length]=8))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/tru_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/tru_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=1))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield1.png" type="png" width="17" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=2))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield2.png" type="png" width="24" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=3))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield3.png" type="png" width="31" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=4))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield4.png" type="png" width="38" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=5))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield5.png" type="png" width="45" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=6))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield6.png" type="png" width="52" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=7))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield7.png" type="png" width="59" height="17"></ShieldSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='primary') and ([length]=8))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="/home/tom/mapnik/symbols/pri_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
+            <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="rgb(255,255,255)" placement="line" spacing="750" min_distance="30" file="&IconsDir;/pri_shield8.png" type="png" width="66" height="17"></ShieldSymbolizer>
         </Rule>
     </Style>
     <Style name="sports_grounds">
@@ -5876,34 +5881,34 @@
             <Filter>(([railway]='station') and not (([disused]='yes')))</Filter>
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/halt.png" type="png" width="4" height="4"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/halt.png" type="png" width="4" height="4"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and not (([disused]='yes')))</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/station_small.png" type="png" width="6" height="6"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/station_small.png" type="png" width="6" height="6"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and ([disused]='yes'))</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/station_disused.png" type="png" width="6" height="6"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/station_disused.png" type="png" width="6" height="6"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and not (([disused]='yes')))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/station.png" type="png" width="9" height="9"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/station.png" type="png" width="9" height="9"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([railway]='halt') or ([railway]='tram_stop')) or ([aerialway]='station'))</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/halt.png" type="png" width="4" height="4"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/halt.png" type="png" width="4" height="4"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([railway]='halt') or ([railway]='tram_stop')) or ([aerialway]='station'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/station_small.png" type="png" width="6" height="6"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/station_small.png" type="png" width="6" height="6"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([railway]='halt') or ([railway]='tram_stop')) or ([aerialway]='station'))</Filter>
@@ -5951,7 +5956,7 @@
             <Filter>([aeroway]='airport')</Filter>
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/airport.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/airport.png" type="png" width="16" height="16"></PointSymbolizer>
             <TextSymbolizer name="name" fontset_name="bold-fonts" size="8" fill="rgb(102,146,218)" dy="-12" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
@@ -5964,7 +5969,7 @@
             <Filter>([aeroway]='aerodrome')</Filter>
             <MinScaleDenominator>400000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/aerodrome.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/aerodrome.png" type="png" width="16" height="16"></PointSymbolizer>
             <TextSymbolizer name="name" fontset_name="oblique-fonts" size="8" fill="rgb(102,146,218)" dy="-12" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
@@ -5977,78 +5982,78 @@
             <Filter>([railway]='level_crossing')</Filter>
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/level_crossing.png" type="png" width="7" height="7"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/level_crossing.png" type="png" width="7" height="7"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([railway]='level_crossing')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/level_crossing2.png" type="png" width="11" height="11"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/level_crossing2.png" type="png" width="11" height="11"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='lighthouse')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/lighthouse.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/lighthouse.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='peak')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/peak.png" type="png" width="8" height="8"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/peak.png" type="png" width="8" height="8"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='cave_entrance')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/poi_cave.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/poi_cave.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='spring')</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/spring.png" type="png" width="5" height="7"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/spring.png" type="png" width="5" height="7"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='tree')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/tree.png" type="png" width="3" height="3"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/tree.png" type="png" width="3" height="3"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='tree')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/tree2.png" type="png" width="5" height="5"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/tree2.png" type="png" width="5" height="5"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([man_made]='power_wind') or (([power]='generator') and ([power_source]='wind')))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/power_wind.png" type="png" width="16" height="26"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/power_wind.png" type="png" width="16" height="26"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='windmill')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/windmill.png" type="png" width="10" height="15"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/windmill.png" type="png" width="10" height="15"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([man_made]='mast')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/communications.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/communications.p.20.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='mini_roundabout')</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/mini_round.png" type="png" width="9" height="9"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/mini_round.png" type="png" width="9" height="9"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([highway]='gate') or ([barrier]='gate'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/gate2.png" type="png" width="7" height="5"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/gate2.png" type="png" width="7" height="5"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([barrier]='lift_gate')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/liftgate.png" type="png" width="7" height="5"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/liftgate.png" type="png" width="7" height="5"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([barrier]='bollard')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/bollard.png" type="png" width="3" height="3"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/bollard.png" type="png" width="3" height="3"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="text">
@@ -7240,46 +7245,46 @@
             <Filter>([int_tc_type]='tertiary')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-tert-casing.18.png" type="png" width="18" height="18" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-tert-casing.18.png" type="png" width="18" height="18" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([int_tc_type]='residential') or ([int_tc_type]='unclassified'))</Filter>
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-casing.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-casing.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='service')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-casing.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-casing.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.18.png" type="png" width="18" height="18" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.18.png" type="png" width="18" height="18" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='tertiary')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-tert-casing.24.png" type="png" width="24" height="24" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-tert-casing.24.png" type="png" width="24" height="24" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='service')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-casing.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-casing.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.24.png" type="png" width="24" height="24" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.24.png" type="png" width="24" height="24" allow_overlap="1"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="turning_circle-fill">
@@ -7287,57 +7292,57 @@
             <Filter>([int_tc_type]='tertiary')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-tert-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-tert-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([int_tc_type]='residential') or ([int_tc_type]='unclassified'))</Filter>
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MinScaleDenominator>12500</MinScaleDenominator>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-livs-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-livs-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([int_tc_type]='residential') or ([int_tc_type]='unclassified'))</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='service')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.12.png" type="png" width="12" height="12" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.12.png" type="png" width="12" height="12" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MinScaleDenominator>5000</MinScaleDenominator>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-livs-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-livs-fill.16.png" type="png" width="16" height="16" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='tertiary')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-tert-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-tert-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([int_tc_type]='residential') or ([int_tc_type]='unclassified'))</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='service')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-uncl-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-uncl-fill.14.png" type="png" width="14" height="14" allow_overlap="1"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([int_tc_type]='living_street')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="/home/tom/mapnik/symbols/turning_circle-livs-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/turning_circle-livs-fill.22.png" type="png" width="22" height="22" allow_overlap="1"></PointSymbolizer>
         </Rule>
     </Style>
     <Style name="village">
@@ -7363,7 +7368,7 @@
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/glacier.png" type="png" width="40" height="32"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/glacier.png" type="png" width="40" height="32"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='glacier')</Filter>
@@ -7373,7 +7378,7 @@
                 <CssParameter name="stroke-width">1.5</CssParameter>
                 <CssParameter name="stroke-dasharray">4, 2</CssParameter>
             </LineSymbolizer>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/glacier2.png" type="png" width="70" height="56"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/glacier2.png" type="png" width="70" height="56"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([waterway]='dock') or ([waterway]='mill_pond')) or ([waterway]='canal'))</Filter>
@@ -7399,12 +7404,12 @@
         <Rule>
             <Filter>(([natural]='marsh') or ([natural]='wetland'))</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/marsh.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/marsh.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='scrub')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="/home/tom/mapnik/symbols/scrub.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/scrub.png" type="png" width="30" height="30"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='land')</Filter>
