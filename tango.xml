@@ -66,23 +66,34 @@
 		<!ENTITY WaterFill "&LightSkyBlue;">		
 
 		<!ENTITY AdminStroke "&Plum;">		
-		<!ENTITY DefaultBuilding "&Aluminium1;">		
+		<!ENTITY DefaultBuilding "&Aluminium2;">		
 
 		<!ENTITY Private "&ScarletRed;">		
+		<!ENTITY LanduseMilitary "&LightScarletRed;">		
+		<!ENTITY MilitaryBuilding "&Aluminium2;">		
 
 		<!ENTITY Park "&LightChameleon;">		
 		<!ENTITY Cemetery "&LightChameleon;">		
 		<!ENTITY Forest "&LightChameleon;">		
+
+		<!ENTITY LanduseResidential "&Aluminium2;">		
+		<!ENTITY LanduseIndustrial "&LightChocolate;">		
+		<!ENTITY LanduseSaltPond "&LightSkyBlue;">		
+		<!ENTITY LanduseVillageGreen "&LightChameleon;">		
+		<!ENTITY LanduseVineyard "&LightChameleon;">		
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&WaterFill;">
     <FontSet name="bold-fonts">
         <Font face_name="DejaVu Sans Bold"></Font>
+        <Font face_name="unifont Medium" />
     </FontSet>
     <FontSet name="book-fonts">
         <Font face_name="DejaVu Sans Book"></Font>
+        <Font face_name="unifont Medium" />
     </FontSet>
     <FontSet name="oblique-fonts">
         <Font face_name="DejaVu Sans Oblique"></Font>
+        <Font face_name="unifont Medium" />
     </FontSet>
     <Style name="access">
         <Rule>
@@ -936,7 +947,7 @@
             <MinScaleDenominator>100000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(171,223,150)</CssParameter>
+                <CssParameter name="fill">&LanduseVineyard;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -970,10 +981,10 @@
         </Rule>
         <Rule>
             <Filter>([landuse]='residential')</Filter>
-            <MinScaleDenominator>1000</MinScaleDenominator>
+            <MinScaleDenominator>50000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(221,221,221)</CssParameter>
+                <CssParameter name="fill">&LanduseResidential;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -981,7 +992,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(255,143,143)</CssParameter>
+                <CssParameter name="fill">&MilitaryBuilding;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -989,7 +1000,7 @@
             <MinScaleDenominator>1000</MinScaleDenominator>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(255,168,168)</CssParameter>
+                <CssParameter name="fill">&LanduseMilitary;</CssParameter>
                 <CssParameter name="fill-opacity">0.4</CssParameter>
             </PolygonSymbolizer>
         </Rule>
@@ -1047,13 +1058,6 @@
             <PolygonPatternSymbolizer file="&IconsDir;/grave_yard_generic.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
-            <Filter>(([landuse]='meadow') or ([landuse]='grass'))</Filter>
-            <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(207,236,168)</CssParameter>
-            </PolygonSymbolizer>
-        </Rule>
-        <Rule>
             <Filter>(([leisure]='park') or ([leisure]='recreation_ground'))</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
@@ -1108,17 +1112,23 @@
             <PolygonPatternSymbolizer file="&IconsDir;/forest.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
+            <Filter>([landuse]='salt_pond')</Filter>
+            <MinScaleDenominator>50000</MinScaleDenominator>
+            <MaxScaleDenominator>3000000</MaxScaleDenominator>
+            <PolygonSymbolizer>
+                <CssParameter name="fill">&LanduseSaltPond;</CssParameter>
+            </PolygonSymbolizer>
+        </Rule>
+        <Rule>
+            <Filter>([landuse]='salt_pond')</Filter>
+            <MaxScaleDenominator>50000</MaxScaleDenominator>
+            <PolygonPatternSymbolizer file="&IconsDir;/salt_pond.png" type="png" width="20" height="20"></PolygonPatternSymbolizer>
+        </Rule>
+        <Rule>
             <Filter>([landuse]='farmyard')</Filter>
             <MaxScaleDenominator>1500000</MaxScaleDenominator>
             <PolygonSymbolizer>
                 <CssParameter name="fill">rgb(221,191,146)</CssParameter>
-            </PolygonSymbolizer>
-        </Rule>
-        <Rule>
-            <Filter>(([landuse]='farm') or ([landuse]='farmland'))</Filter>
-            <MaxScaleDenominator>1500000</MaxScaleDenominator>
-            <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(234,216,189)</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -1132,12 +1142,12 @@
             <Filter>([landuse]='village_green')</Filter>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(207,236,168)</CssParameter>
+                <CssParameter name="fill">&LanduseVillageGreen;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>([landuse]='retail')</Filter>
-            <MaxScaleDenominator>750000</MaxScaleDenominator>
+            <MaxScaleDenominator>25000</MaxScaleDenominator>
             <PolygonSymbolizer>
                 <CssParameter name="fill">rgb(241,218,218)</CssParameter>
             </PolygonSymbolizer>
@@ -1154,7 +1164,7 @@
             <Filter>(([landuse]='industrial') or ([landuse]='railway'))</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(223,209,214)</CssParameter>
+                <CssParameter name="fill">&LanduseIndustrial;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -1186,13 +1196,6 @@
                 <CssParameter name="stroke">rgb(85,85,85)</CssParameter>
                 <CssParameter name="stroke-width">0.4</CssParameter>
             </LineSymbolizer>
-        </Rule>
-        <Rule>
-            <Filter>([landuse]='commercial')</Filter>
-            <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(239,200,200)</CssParameter>
-            </PolygonSymbolizer>
         </Rule>
         <Rule>
             <Filter>(((([landuse]='brownfield') or ([landuse]='landfill')) or ([landuse]='greenfield')) or ([landuse]='construction'))</Filter>
