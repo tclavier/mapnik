@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="23.341263"
+   height="15.836202"
+   viewBox="-0.031 -0.031 23.341263 15.836202"
+   enable-background="new -0.031 -0.031 576 576"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="caravan.svg"
+   inkscape:export-filename="/home/tom/tmp/mapnik/tango/caravan.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"><metadata
+   id="metadata26"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1001"
+   inkscape:window-height="666"
+   id="namedview24"
+   showgrid="false"
+   inkscape:zoom="24.420272"
+   inkscape:cx="11.670632"
+   inkscape:cy="7.8362031"
+   inkscape:window-x="808"
+   inkscape:window-y="487"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg2" />
+<defs
+   id="defs4"><inkscape:perspective
+   sodipodi:type="inkscape:persp3d"
+   inkscape:vp_x="0 : 288 : 1"
+   inkscape:vp_y="0 : 1000 : 0"
+   inkscape:vp_z="576 : 288 : 1"
+   inkscape:persp3d-origin="288 : 192 : 1"
+   id="perspective28" />
+</defs>
+
+
+
+<path
+   d="m 23.310264,6.49108 c 0,-3.602 -4.73251,-6.52208 -10.57025,-6.52208 -5.8377505,0 -10.5702505,2.91998 -10.5702505,6.52208 0,0.0215 9.6e-4,0.0428 10e-4,0.0643 h -10e-4 v 7.004 h 8.1308505 c 0.0517,-1.28606 1.13078,-2.31324 2.4555,-2.31324 1.32442,0 2.40365,1.02718 2.45531,2.31324 h 8.09875 v -7.004 h -0.001 c 3.8e-4,-0.0214 0.001,-0.0428 0.001,-0.0643 z m -12.1767,1.26091 v 0.008 H 5.9287735 v -0.0206 c -0.87151,-0.12616 -1.54216,-0.88038 -1.54216,-1.79469 0,-0.9143 0.67065,-1.66852 1.54216,-1.79468 v -0.0206 h 5.2047905 v 0.008 c 0.91826,0.0821 1.63864,0.85928 1.63864,1.80712 0,0.94785 -0.72038,1.7251 -1.63864,1.80713 z m 9.89555,2.93193 c 0,0.9226 -0.82708,1.67064 -1.84731,1.67064 -1.01426,0 -1.837,-0.73946 -1.84654,-1.65464 h -8.7e-4 v -5.1405 c 0,-0.92269 0.82708,-1.67064 1.84741,-1.67064 1.02023,0 1.84731,0.74795 1.84731,1.67064 0,0.0709 -0.006,0.14053 -0.016,0.20906 v 4.70619 c 0.009,0.0688 0.016,0.13822 0.016,0.20925 z"
+   id="path12"
+   style="fill:#204a87" />
+<ellipse
+   cx="408.80301"
+   cy="256.46899"
+   rx="14"
+   ry="13.667"
+   id="ellipse14"
+   sodipodi:cx="408.80301"
+   sodipodi:cy="256.46899"
+   sodipodi:rx="14"
+   sodipodi:ry="13.667"
+   transform="matrix(0.08889436,0,0,0.08889436,-17.099546,-16.97779)"
+   style="fill:#204a87" />
+<ellipse
+   cx="342.21899"
+   cy="338.96899"
+   rx="22.875"
+   ry="23"
+   id="ellipse16"
+   sodipodi:cx="342.21899"
+   sodipodi:cy="338.96899"
+   sodipodi:rx="22.875"
+   sodipodi:ry="23"
+   transform="matrix(0.08659267,0,0,0.08659267,-16.888796,-15.53866)"
+   style="fill:#204a87" />
+
+
+<rect
+   x="-0.030999999"
+   y="12.450939"
+   width="2.8915489"
+   height="0.96384966"
+   id="rect22"
+   style="fill:#204a87" />
+</svg>
