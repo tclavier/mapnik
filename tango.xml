@@ -4208,7 +4208,7 @@
         <Rule>
             <Filter>([tourism]='camp_site')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/camping.n.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/camping.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([highway]='ford')</Filter>
@@ -4218,7 +4218,7 @@
         <Rule>
             <Filter>([tourism]='caravan_site')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/caravan_park.p.24.png" type="png" width="24" height="24"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/caravan.png" type="png" width="23" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='car_sharing')</Filter>
@@ -4238,7 +4238,7 @@
         <Rule>
             <Filter>([amenity]='fuel')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/fuel.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/fuel.png" type="png" width="13" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([tourism]='guest_house')</Filter>
