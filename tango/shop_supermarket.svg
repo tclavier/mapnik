@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16.000019"
+   height="15.999323"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="shop_supermarket.svg">
+  <title
+     id="title3885">shopping cart</title>
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2941"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3731"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="17.895892"
+     inkscape:cx="13.866014"
+     inkscape:cy="13.345174"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="667"
+     inkscape:window-height="476"
+     inkscape:window-x="960"
+     inkscape:window-y="502"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       orientation="1,0"
+       position="1778.6944,-423.92918"
+       id="guide3856" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="2017.6644,-422.66479"
+       id="guide3858" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="2017.6644,-383.46865"
+       id="guide3860" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>shopping cart</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cart</rdf:li>
+            <rdf:li>supermarket</rdf:li>
+            <rdf:li>shopping</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>shopping cart</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sergio Luiz Araujo Silva</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-399.85243,-207.82835)">
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#204a87;fill-opacity:1;stroke:none;stroke-width:15.50000000000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:'.PhonepadTwo';-inkscape-font-specification:'.PhonepadTwo'"
+       d="m 415.39221,207.8284 c -0.0247,3.7e-4 -0.0501,0.003 -0.0743,0.007 -4.4e-4,9e-5 -9.2e-4,-1e-4 -10e-4,0 l -2.44957,0.43693 c -0.15579,0.0279 -0.2864,0.13949 -0.34404,0.29321 a 0.11137167,0.11631903 0 0 0 0,0.001 l -1.13671,3.04419 -11.09325,0.28889 c -0.12757,0.003 -0.24733,0.0635 -0.33027,0.16385 -0.0829,0.10035 -0.12286,0.23378 -0.10735,0.36651 l 0.61239,5.29068 c 0.0253,0.22197 0.20086,0.398 0.41423,0.41538 l 7.90881,0.65685 1.56744,1.28781 a 0.11137167,0.11631903 0 0 0 0.006,0.004 c 0.002,0.001 0.004,0.002 0.005,0.003 0.002,10e-4 0.004,0.003 0.006,0.004 0.28605,0.223 0.35694,0.52681 0.31652,0.69565 -0.023,0.0962 -0.0582,0.16689 -0.14175,0.22134 -0.0835,0.0545 -0.22786,0.0939 -0.47477,0.079 a 0.11137167,0.11631903 0 0 0 -0.003,0 c -0.008,-2.7e-4 -0.0168,-1.8e-4 -0.0248,0 -0.001,3e-5 -0.003,-4e-5 -0.004,0 l -9.43222,0.0288 -10e-4,0 c -0.24787,-0.002 -0.45649,0.21548 -0.4555,0.4743 9.7e-4,0.25885 0.2104,0.47516 0.45826,0.47144 4.9e-4,-1e-5 9.3e-4,1e-5 10e-4,0 l 0.68945,-0.001 c -0.25617,0.17056 -0.42798,0.46891 -0.42798,0.80776 0,0.52703 0.41329,0.95868 0.9179,0.95868 0.50461,0 0.9179,-0.43165 0.9179,-0.95868 0,-0.34068 -0.17227,-0.64199 -0.43074,-0.81207 l 7.76706,-0.023 c -0.27983,0.16478 -0.47065,0.47758 -0.47065,0.83507 0,0.52703 0.41329,0.95868 0.9179,0.95868 0.50461,0 0.91791,-0.43165 0.91791,-0.95868 0,-0.4577 -0.31133,-0.84355 -0.72387,-0.93711 0.39006,-0.14412 0.6897,-0.4413 0.87524,-0.89544 a 0.11137167,0.11631903 0 0 0 0.007,-0.0172 c 0.14224,-0.59406 -0.11004,-1.23994 -0.63028,-1.66007 a 0.11137167,0.11631903 0 0 0 -0.004,-0.004 c -10e-4,-10e-4 -0.002,-0.003 -0.003,-0.004 a 0.11137167,0.11631903 0 0 0 -0.0151,-0.0158 l -1.11057,-0.90981 3.46381,-9.26624 2.19773,-0.39094 c 4.4e-4,-9e-5 9.3e-4,9e-5 0.001,0 0.23087,-0.0388 0.39971,-0.2635 0.37982,-0.50736 -0.0199,-0.24433 -0.22376,-0.43596 -0.45826,-0.43263 z m -4.34042,4.5131 -0.63854,1.71038 -0.83258,0 0,-1.67157 1.47112,-0.0388 z m -1.78901,0.0474 0,1.66295 -1.53717,0 0,-1.6227 1.53717,-0.0403 z m -1.85507,0.0474 0,1.61551 -1.53717,0 0,-1.57527 1.53717,-0.0402 z m -1.85507,0.0489 0,1.56665 -1.53717,0 0,-1.5264 1.53717,-0.0402 z m -1.85506,0.0489 0,1.51778 -1.53717,0 0,-1.47753 1.53717,-0.0403 z m -1.85507,0.0474 0,1.47035 -1.12707,0 -0.16652,-1.43585 1.29359,-0.0345 z m -1.08854,1.80093 1.08854,0 0,1.50197 -0.91515,0 -0.17339,-1.50197 z m 1.40644,0 1.53717,0 0,1.50197 -1.53717,0 0,-1.50197 z m 1.85506,0 1.53717,0 0,1.50197 -1.53717,0 0,-1.50197 z m 1.85507,0 1.53717,0 0,1.50197 -1.53717,0 0,-1.50197 z m 1.85507,0 1.53717,0 0,1.50197 -1.53717,0 0,-1.50197 z m 1.85506,0 0.7101,0 -0.56147,1.50197 -0.14863,0 0,-1.50197 z m -8.61477,1.83255 0.87661,0 0,1.07797 -0.75964,-0.0632 -0.11697,-1.01473 z m 1.19451,0 1.53717,0 0,1.23176 -1.53717,-0.12792 0,-1.10384 z m 1.85506,0 1.53717,0 0,1.38555 -1.53717,-0.12648 0,-1.25907 z m 1.85507,0 1.53717,0 0,1.54078 -1.53717,-0.12792 0,-1.41286 z m 1.85507,0 1.53717,0 0,0.91412 -0.29175,0.78045 c -0.0379,-0.0192 -0.0792,-0.0309 -0.1211,-0.0345 l -1.12432,-0.0934 0,-1.56665 z m 1.85506,0 0.0234,0 -0.0234,0.0676 0,-0.0676 z m -7.7877,6.09126 c 0.29994,0 0.53945,0.25016 0.53945,0.56342 0,0.31326 -0.23951,0.56198 -0.53945,0.56198 -0.29993,0 -0.53946,-0.24872 -0.53946,-0.56198 0,-0.31326 0.23953,-0.56342 0.53946,-0.56342 z m 8.70148,0 c 0.29993,0 0.53945,0.25016 0.53945,0.56342 0,0.31326 -0.23952,0.56198 -0.53945,0.56198 -0.29994,0 -0.53946,-0.24872 -0.53946,-0.56198 0,-0.31326 0.23952,-0.56342 0.53946,-0.56342 z m -8.70148,0.26733 c -0.16294,0 -0.29312,0.13596 -0.29312,0.30615 0,0.17018 0.13018,0.3047 0.29312,0.3047 0.16295,0 0.29312,-0.13452 0.29312,-0.3047 0,-0.17019 -0.13017,-0.30615 -0.29312,-0.30615 z m 8.70148,0 c -0.16295,0 -0.29312,0.13596 -0.29312,0.30615 0,0.17018 0.13017,0.3047 0.29312,0.3047 0.16294,0 0.29312,-0.13452 0.29312,-0.3047 0,-0.17019 -0.13018,-0.30615 -0.29312,-0.30615 z"
+       id="path3847"
+       inkscape:export-filename="/home/tom/tmp/mapnik/tango/shop_supermarket.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>
