@@ -28,6 +28,7 @@
     <!ENTITY DarkButter "rgb(196,160,0)">
     <!ENTITY Butter "rgb(237,212,0)">
     <!ENTITY LightButter "rgb(252,233,79)">
+    <!ENTITY VeryLightButter "rgb(252,245,158)">
 
     <!ENTITY LightChocolate "rgb(233,185,110)">
     <!ENTITY Chocolate "rgb(193,125,17)">
@@ -40,6 +41,8 @@
     <!ENTITY Aluminium2 "rgb(211,215,207)">
     <!ENTITY Aluminium1 "rgb(238,238,236)">
 
+    <!ENTITY Blanc "rgb(255,255,255)">
+    <!ENTITY Noir "rgb(0,0,0)">
 
 		<!ENTITY MotorwayStroke "&DarkOrange;">		
 		<!ENTITY MotorwayFill "&Orange;">		
@@ -50,13 +53,14 @@
 		<!ENTITY PrimaryStroke "&DarkButter;">		
 		<!ENTITY PrimaryFill "&Butter;">		
 
-		<!ENTITY SecondaryStroke "&DarkButter;">		
+		<!ENTITY SecondaryStroke "&Butter;">		
 		<!ENTITY SecondaryFill "&LightButter;">		
 
-		<!ENTITY TertiaryStroke "&Butter;">		
-		<!ENTITY TertiaryFill "&LightButter;">		
+		<!ENTITY TertiaryStroke "&LightButter;">		
+		<!ENTITY TertiaryFill "&VeryLightButter;">		
 
 		<!ENTITY ResidentialStroke "&Aluminium3;">		
+		<!ENTITY ResidentialFill "&Blanc;">		
 
 		<!ENTITY FootwayStroke "&Chocolate;">		
 		<!ENTITY PathStroke "&Chocolate;">		
@@ -81,6 +85,8 @@
 		<!ENTITY LanduseSaltPond "&LightSkyBlue;">		
 		<!ENTITY LanduseVillageGreen "&LightChameleon;">		
 		<!ENTITY LanduseVineyard "&LightChameleon;">		
+
+		<!ENTITY StationFontColor "&DarkSkyBlue;">
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&WaterFill;">
     <FontSet name="bold-fonts">
@@ -849,7 +855,7 @@
             <Filter>((([highway]='residential') or ([highway]='unclassified')) or ([highway]='service'))</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
             <PolygonSymbolizer>
-                <CssParameter name="fill">rgb(255,255,255)</CssParameter>
+                <CssParameter name="fill">&ResidentialFill;</CssParameter>
             </PolygonSymbolizer>
         </Rule>
         <Rule>
@@ -879,18 +885,18 @@
         <Rule>
             <MinScaleDenominator>200000</MinScaleDenominator>
             <MaxScaleDenominator>400000</MaxScaleDenominator>
-            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="9" fill="rgb(102,102,255)" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
+            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="9" fill="&StationFontColor;" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
         </Rule>
         <Rule>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>200000</MaxScaleDenominator>
-            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="9" fill="rgb(102,102,255)" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
-            <TextSymbolizer name="name" fontset_name="oblique-fonts" size="8" fill="rgb(102,102,255)" dy="-8" vertical_alignment="top" halo_radius="1" wrap_width="2" wrap_character=";" min_distance="2"></TextSymbolizer>
+            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="9" fill="&StationFontColor;" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="oblique-fonts" size="8" fill="&StationFontColor;" dy="-8" vertical_alignment="top" halo_radius="1" wrap_width="2" wrap_character=";" min_distance="2"></TextSymbolizer>
         </Rule>
         <Rule>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="12" fill="rgb(102,102,255)" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
-            <TextSymbolizer name="name" fontset_name="oblique-fonts" size="11" fill="rgb(102,102,255)" dy="-10" vertical_alignment="top" halo_radius="1" wrap_width="2" wrap_character=";" min_distance="2"></TextSymbolizer>
+            <TextSymbolizer name="ref" fontset_name="oblique-fonts" size="12" fill="&StationFontColor;" halo_radius="1" wrap_width="12" min_distance="2"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="oblique-fonts" size="11" fill="&StationFontColor;" dy="-10" vertical_alignment="top" halo_radius="1" wrap_width="2" wrap_character=";" min_distance="2"></TextSymbolizer>
         </Rule>
     </Style>
     <Style name="interpolation">
@@ -1045,7 +1051,7 @@
         <Rule>
             <Filter>(((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard')) and ([religion]='jewish'))</Filter>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="&IconsDir;/cemetery_jewish.18.png" type="png" width="18" height="18"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/cemetery_jewish.png" type="png" width="16" height="16"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>(((([landuse]='cemetery') or ([landuse]='grave_yard')) or ([amenity]='grave_yard')) and ([religion]='christian'))</Filter>
@@ -1068,7 +1074,7 @@
         <Rule>
             <Filter>([tourism]='zoo')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="&IconsDir;/zoo.png" type="png" width="21" height="24"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/zoo.png" type="png" width="22" height="22"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([leisure]='common')</Filter>
@@ -1270,7 +1276,7 @@
         <Rule>
             <Filter>([natural]='beach')</Filter>
             <MaxScaleDenominator>100000</MaxScaleDenominator>
-            <PolygonPatternSymbolizer file="&IconsDir;/beach.png" type="png" width="10" height="10"></PolygonPatternSymbolizer>
+            <PolygonPatternSymbolizer file="&IconsDir;/beach.png" type="png" width="20" height="20"></PolygonPatternSymbolizer>
         </Rule>
         <Rule>
             <Filter>([natural]='mud')</Filter>
@@ -4342,7 +4348,7 @@
         <Rule>
             <Filter>([amenity]='recycling')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/recycling.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/recycling.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='restaurant')</Filter>
@@ -5917,23 +5923,23 @@
             <Filter>((([railway]='halt') or ([railway]='tram_stop')) or ([aerialway]='station'))</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(102,102,255)" dy="-8" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&StationFontColor;" dy="-8" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>((([railway]='halt') or ([railway]='tram_stop')) or ([aerialway]='station'))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="rgb(102,102,255)" dy="-10" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="&StationFontColor;" dy="-10" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and not (([disused]='yes')))</Filter>
             <MinScaleDenominator>25000</MinScaleDenominator>
             <MaxScaleDenominator>50000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="bold-fonts" size="9" fill="rgb(102,102,255)" dy="-8" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="bold-fonts" size="9" fill="&StationFontColor;" dy="-8" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and not (([disused]='yes')))</Filter>
             <MaxScaleDenominator>25000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="bold-fonts" size="11" fill="rgb(102,102,255)" dy="-10" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="bold-fonts" size="11" fill="&StationFontColor;" dy="-10" vertical_alignment="top" halo_radius="1"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([railway]='station') and ([disused]='yes'))</Filter>
