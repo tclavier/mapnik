@@ -7798,7 +7798,7 @@
         </Rule>
     </Style>
     <Style name="way_numbers">
-        <Rulen>
+        <Rule>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
             <TextSymbolizer name="addr:housenumber" fontset_name="book-fonts" size="9" fill="rgb(68,68,68)"></TextSymbolizer>
         </Rule>
