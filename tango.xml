@@ -4,6 +4,7 @@
 		<!ENTITY password "osm">		
 		<!ENTITY dbname "gis">		
 		<!ENTITY IconsDir "/etc/mapnik/tango">		
+		<!ENTITY WorldBoundaries "/home/tom/mapnik/world_boundaries">		
 
     <!ENTITY DarkScarletRed "rgb(164,0,0)">
     <!ENTITY ScarletRed "rgb(204,0,0)">
@@ -7814,35 +7815,35 @@
     <Layer name="world" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>world</StyleName>
         <Datasource>
-            <Parameter name="file">/home/tom/mapnik/world_boundaries/shoreline_300</Parameter>
+            <Parameter name="file">&WorldBoundaries;/shoreline_300</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
     <Layer name="coast-poly" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
         <StyleName>coast-poly</StyleName>
         <Datasource>
-            <Parameter name="file">/home/tom/mapnik/world_boundaries/processed_p</Parameter>
+            <Parameter name="file">&WorldBoundaries;/processed_p</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
     <Layer name="builtup" srs="+proj=merc +datum=WGS84 +over">
         <StyleName>builtup</StyleName>
         <Datasource>
-            <Parameter name="file">/home/tom/mapnik/world_boundaries/builtup_area</Parameter>
+            <Parameter name="file">&WorldBoundaries;/builtup_area</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
     <Layer name="necountries" srs="+init=epsg:4326">
         <StyleName>necountries</StyleName>
         <Datasource>
-            <Parameter name="file">/home/tom/mapnik/world_boundaries/110m_admin_0_boundary_lines_land.shp</Parameter>
+            <Parameter name="file">&WorldBoundaries;/110m_admin_0_boundary_lines_land.shp</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
     <Layer name="nepopulated" srs="+init=epsg:4326">
         <StyleName>nepopulated</StyleName>
         <Datasource>
-            <Parameter name="file">/home/tom/mapnik/world_boundaries/10m_populated_places.shp</Parameter>
+            <Parameter name="file">&WorldBoundaries;/10m_populated_places.shp</Parameter>
             <Parameter name="type">shape</Parameter>
         </Datasource>
     </Layer>
