@@ -88,6 +88,7 @@
 		<!ENTITY LanduseVineyard "&LightChameleon;">		
 
 		<!ENTITY StationFontColor "&DarkSkyBlue;">
+		<!ENTITY ShopFontColor "&DarkSkyBlue;">
 ]>
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" bgcolor="&WaterFill;">
     <FontSet name="bold-fonts">
@@ -6293,12 +6294,12 @@
         <Rule>
             <Filter>((((((([shop]='bakery') or ([shop]='clothes')) or ([shop]='fashion')) or ([shop]='convenience')) or ([shop]='doityourself')) or ([shop]='hairdresser')) or ([shop]='butcher'))</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="rgb(153,51,153)" dy="9" vertical_alignment="bottom" halo_radius="1" wrap_width="12"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&ShopFontColor;" dy="9" vertical_alignment="bottom" halo_radius="1" wrap_width="12"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>(([shop]='supermarket') or ([shop]='department_store'))</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="rgb(153,51,153)" dy="9" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
+            <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="&ShopFontColor;" dy="9" vertical_alignment="bottom" halo_radius="1" wrap_width="20"></TextSymbolizer>
         </Rule>
         <Rule>
             <Filter>([military]='danger_area')</Filter>
