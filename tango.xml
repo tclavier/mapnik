@@ -1244,7 +1244,7 @@
         <Rule>
             <Filter>([amenity]='parking')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonSymbolizern>
+            <PolygonSymbolizer>
                 <CssParameter name="fill">rgb(247,239,183)</CssParameter>
             </PolygonSymbolizer>
         </Rule>
