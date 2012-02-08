@@ -4330,7 +4330,7 @@
         <Rule>
             <Filter>([amenity]='police')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/police.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/police.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='post_box')</Filter>
@@ -4355,7 +4355,7 @@
         <Rule>
             <Filter>([amenity]='restaurant')</Filter>
             <MaxScaleDenominator>5000</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/restaurant.p.16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/restaurant.png" type="png" width="16" height="16"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([amenity]='fast_food')</Filter>
