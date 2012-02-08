@@ -1244,7 +1244,7 @@
         <Rule>
             <Filter>([amenity]='parking')</Filter>
             <MaxScaleDenominator>750000</MaxScaleDenominator>
-            <PolygonSymbolizer>
+            <PolygonSymbolizern>
                 <CssParameter name="fill">rgb(247,239,183)</CssParameter>
             </PolygonSymbolizer>
         </Rule>
@@ -4414,7 +4414,7 @@
         </Rule>
         <Rule>
             <Filter>([highway]='speed_camera')</Filter>
-            <MaxScaleDenominator>12500</MaxScaleDenominator>
+            <MaxScaleDenominator>25000</MaxScaleDenominator>
             <PointSymbolizer file="&IconsDir;/warning.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
