@@ -4415,7 +4415,7 @@
         <Rule>
             <Filter>([highway]='speed_camera')</Filter>
             <MaxScaleDenominator>12500</MaxScaleDenominator>
-            <PointSymbolizer file="&IconsDir;/warning_16.png" type="png" width="16" height="16"></PointSymbolizer>
+            <PointSymbolizer file="&IconsDir;/warning.png" type="png" width="20" height="20"></PointSymbolizer>
         </Rule>
         <Rule>
             <Filter>([shop]='bakery')</Filter>
